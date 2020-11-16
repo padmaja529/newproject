@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LandingPage.master.cs" Inherits="E_Billing.LandingPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 104px;
+        }
+        .auto-style2 {
+            float: left;
+            height: 50px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+            width: 282px;
+        }
+        .auto-style3 {
+            width: 108%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           <nav class="navbar navbar-inverse">
+                  <div class="container-fluid">
+                     <div class="navbar-header">
+                          <a class="auto-style2" href="#" style="padding-top:45px; text-size-adjust:300%; font-size: 26px; color:white"><marquee direction="left" height="100px" class="auto-style3" padding-top="100px">e-billing</marquee></a>
+                          <asp:ImageButton ID="ImageButton1" runat="server" CssClass="auto-style1" Height="100px" ImageUrl="~/img/Eimages.png" Width="591px" padding-left="200%" />
+                           
+                     </div>
+                     
+                      <ul class="nav navbar-nav navbar-right">
+                          <li><a href="Home.aspx" style="padding-top:45px; font-size: 25px;"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                          <li><a href="Login.aspx" style="padding-top:45px; font-size: 25px; "><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                      </ul>
+                  </div>
+           </nav>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                </p>
+            </asp:ContentPlaceHolder>
+            
+        </div>
+    </form>
+    <footer class="page-footer font-small blue" style="background-color:black; height:50px; margin-top:10px; text-align:center; padding-top:20px;">
+
+
+   <!-- Copyright -->
+     <div class="footer-copyright text-center py-3" style="color:mediumblue">© 2020 Copyright:DXC e-billing
+    
+     </div>
+   <!-- Copyright -->
+
+    </footer>
+  <!-- Footer -->
+</body>
+</html>
